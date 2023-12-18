@@ -2,16 +2,18 @@ name: browsersync-debug
 type: drupal10
 docroot: docroot
 php_version: "8.1"
-webserver_type: nginx-fpm
+webserver_type: apache-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
 database:
-    type: mariadb
-    version: "10.4"
+    type: mysql
+    version: "5.7"
+webimage_extra_packages: [ffmpeg, jpegoptim, pngquant, libjpeg-turbo-progs, pngcrush]
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
+nodejs_version: "18"
 
 # Key features of DDEV's config.yaml:
 
